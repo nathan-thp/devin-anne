@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FLEXBOX */
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.mh-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+
+}
+
+.quote {
+}
+
+/* HEADER */
+.main-header {
+  margin: 0;
+  border: solid black 7px;
+  padding: 20px 0;
+}
+
+nav li {
+  background-color: lightsalmon;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 10%;
+  content: "";
+}
+
+/* MAIN CONTENT */
+
+.quote {
+  background-image: url(../img/beautiful.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25% 100%;
+}
