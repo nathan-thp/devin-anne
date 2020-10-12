@@ -1,12 +1,13 @@
 body {
   margin: 0 auto;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: whitesmoke;
 }
 
 /* FLEXBOX */
 .main-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   
 }
@@ -16,11 +17,31 @@ body {
   justify-content: space-around;
 }
 
+.main-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.quote {
+  display: flex;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
 .nav-foot {
   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  align-content: flex-end;
+  flex-direction: row;
+  justify-content: center;
 }
 
 
@@ -28,13 +49,15 @@ body {
 
 /* HEADER */
 .main-header {
-  background-color: darkcyan;
-  padding-bottom: 15px;
+  background-color: #008b8b;
+  padding-top: 20px;
+  min-width: 100%
 }
 
 ul {
   margin: 0;
   padding: 0;
+  padding-top: 15px;
   text-align: center;
   list-style: none;
   min-width: 100%;
@@ -50,11 +73,17 @@ ul {
 
 .nav a {
   display: block;
-  padding: ;
 }
 .logo {
   width: 4em;  
   padding: 25px;
+  position: relative;
+}
+
+/* MAIN */
+.beautiful {
+  max-width: 20%;
+  max-height: 20%;
 }
 
 
@@ -62,3 +91,28 @@ ul {
 
 
 /* FOOTER */
+footer {
+  background-color: darkcyan;
+  padding-bottom: 15px;
+  
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  min-width: 100%;
+}
+
+.nav-foot li {
+  background-color: lightgrey;
+  border-radius: 4px;
+  padding: 10px 6%;
+  box-shadow: 5px 5px 5px rgb(37, 34, 34);
+  border: solid rgb(0, 0, 0) .07em;
+}
+
+.nav-foot a {
+  display: block;
+}
