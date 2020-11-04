@@ -1,109 +1,167 @@
 body {
-    margin: 0 auto;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: whitesmoke;
-  }
-  
-  /* FLEXBOX */
-  .main-header {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .main-container {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  
-  }
-  
-  footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-  }
-  
-  .nav-foot {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  
-  
-  
-  /* HEADER */
-  .main-header {
-    background-color: #008b8b;
-    padding-top: 20px;
-    min-width: 100%
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-    padding-top: 15px;
-    text-align: center;
-    list-style: none;
-    min-width: 100%;
-  }
-  
-  .nav li {
-    background-color: lightgrey;
-    border-radius: 4px;
-    padding: 10px 6%;
-    box-shadow: 5px 5px 5px rgb(37, 34, 34);
-    border: solid rgb(0, 0, 0) .07em;
-  }
-  
-  .nav a {
-    display: block;
-  }
-  .logo {
-    width: 4em;  
-    padding: 25px;
-    position: relative;
-  }
-  
-  /* MAIN */
+  margin: 0 auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: whitesmoke;
+}
 
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.quote {
+  display: flex;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.nav-foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+
+/* HEADER */
+.main-header {
+  background-color: #008b8b;
+  padding-top: 20px;
+  min-width: 100%
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  text-align: center;
+  list-style: none;
+  min-width: 100%;
+}
+
+nav a {
+  background-color: lightgrey;
+  border-radius: 4px;
+  padding: 10px 6%;
+  box-shadow: 5px 5px 5px rgb(37, 34, 34);
+  border: solid rgb(0, 0, 0) .07em;
+}
+
+.nav a {
+  display: block;
+}
+.logo {
+  width: 4em;  
+  padding: 25px;
+  position: relative;
+}
+
+/* MAIN */
+.beautiful {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+  background-color: darkcyan;
+  padding-bottom: 15px;
   
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  min-width: 100%;
+}
+
+.nav-foot li {
+  background-color: lightgrey;
+  border-radius: 4px;
+  padding: 10px 6%;
+  box-shadow: 5px 5px 5px rgb(37, 34, 34);
+  border: solid rgb(0, 0, 0) .07em;
+}
+
+.nav-foot a {
+  display: block;
+}
+
+nav a:hover {
+  box-shadow: 0 0px 20px #273D26 ;
+}
+
+.radiobuttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#testSubmit {
+  padding: 10px 10px;
+  background-color: grey;
+  color: white;
+}
+
+label {
+  text-align: center;
+}
+
+.button {
+  color: black;
+  text-transform: capitalize;
+  background-color:lightgrey;
+  border-radius: 10px;
+  padding:20px 30px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.button:hover {
+  box-shadow: 10px, 10px, 10px grey;
   
-  
-  /* FOOTER */
-  footer {
-    background-color: darkcyan;
-    padding-bottom: 15px;
-    
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style: none;
-    min-width: 100%;
-  }
-  
-  .nav-foot li {
-    background-color: lightgrey;
-    border-radius: 4px;
-    padding: 10px 6%;
-    box-shadow: 5px 5px 5px rgb(37, 34, 34);
-    border: solid rgb(0, 0, 0) .07em;
-  }
-  
-  .nav-foot a {
-    display: block;
-  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+#title{
+  text-align: center;
+  text-decoration: underline;
+}

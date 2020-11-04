@@ -1,21 +1,46 @@
+//Fills in the question div
+function questionIndex() {
+    if (currentItemIndex === 4) {
+        (document.getElementById("question").innerHTML = `You got ${points} questions correct!`)
+} else {
+    document.getElementById("question").innerHTML = questions[currentItemIndex][0];
+    return console.log(currentItemIndex);
+}
+}
+
+//Variables
 const questions = [
-    ["What is Devin's middle name?", "ANNE"],
-    ["What month was Devin born?", "MAY"],
-    ["What state was Devin born in?", "INDIANA"],
-    ["What color is Devin's hair?", "RED"]
-];
+    ["Devin was born in June.", "false"],
+    ["Devin has red hair.", "true"],
+    ["Devin was born in Indiana.", "true"],
+    ["Devin's middle name is Lynn", "false"]
+]
 
-let correctAnswers = 0;
-let html = `<h2>You got ${correctAnswers} questions right!</h2>`;
-let fail = `<h2>Sorry you did not pass.</h2>`;
+let points = 0;
+let currentItemIndex = 0;
+let answer = questions[currentItemIndex][1];
+let btn = document.getElementsByClassName("button");
+let btnTrue = document.getElementById("btnTrue");
+let btnFalse = document.getElementById("btnFalse");
 
-for (i = 0; i < questions.length; i++) {
-    let question = questions[i][0];
-    let answer = questions[i][1];
-    let response = prompt(question);
-    if (response.toUpperCase === answer) {
-        correctAnswers++;
+questionIndex();
+
+
+//Listens for button click, checks if button value is equal to question.
+for (var i = 0 ; i < questions.length; i++) {
+    btn[i].addEventListener('click', event => {
+    if (event.target.value === questions[currentItemIndex][1]) {
+        console.log("Correct");
+        points++
+        currentItemIndex++;
+        console.log(points);
+        questionIndex();
+    } else {
+        console.log("Wrong");
+        currentItemIndex++;
+        console.log(points);
+        questionIndex();
     }
 }
-document.querySelector('div').innerHTML = html;
-console.log(correctAnswers);
+);
+}

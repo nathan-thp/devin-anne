@@ -54,7 +54,7 @@ footer {
   min-width: 100%
 }
 
-ul {
+nav {
   margin: 0;
   padding: 0;
   padding-top: 15px;
@@ -63,7 +63,7 @@ ul {
   min-width: 100%;
 }
 
-.nav li {
+nav a {
   background-color: lightgrey;
   border-radius: 4px;
   padding: 10px 6%;
@@ -115,4 +115,8 @@ ul {
 
 .nav-foot a {
   display: block;
+}
+
+nav a:hover {
+  box-shadow: 0 0px 20px #273D26 ;
 }
