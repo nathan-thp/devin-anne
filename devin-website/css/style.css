@@ -4,7 +4,35 @@ body {
   background-color: whitesmoke;
 }
 
-/* FLEXBOX */
+
+.main-container {
+  display: flex;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+/* FLEXBOX *
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+  min-height: auto;
+}
+
 .main-header {
   display: flex;
   flex-direction: column-reverse;
@@ -20,7 +48,7 @@ body {
 .main-container {
   display: flex;
   flex-grow: 1;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -44,6 +72,11 @@ footer {
   justify-content: center;
 }
 
+.quote {
+  display: flex;
+  flex-direction: column;
+}
+*/
 
 
 
@@ -75,15 +108,29 @@ nav a {
   display: block;
 }
 .logo {
-  width: 4em;  
-  padding: 25px;
+  width: 3em;  
+  padding: 15px;
   position: relative;
 }
 
+.main-header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+
 /* MAIN */
 .beautiful {
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 50%;
+  max-height: 50%;
+  border-right: 5px solid black;
 }
 
 
@@ -119,4 +166,17 @@ ul {
 
 nav a:hover {
   box-shadow: 0 0px 20px #273D26 ;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.nav-foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
