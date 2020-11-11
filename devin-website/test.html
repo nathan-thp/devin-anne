@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/headfoot.css">
     <link rel="stylesheet" href="css/test.css">
     <title>Devin is a Good Girl</title>
 </head>
 <body>
     <header class="main-header">
         <img class="logo" src="svg/d.svg">
-        <nav class="nav">
+        <nav id="nav">
             <a href="index.html"><img src="svg/home.svg"></a>
             <a href="photos.html"><img src="svg/image.svg"></a>
             <a href="test.html"><img src="svg/share.svg"></a>
         </nav>
     </header>
-    <main>
+    <main id='content'>
         <h1 id="title">Devin Test</h1>
             <div class = "container">
                 <h2 id = "question">
                 </h2>
+                <p id="points">Points: </p>
             </br>
                 <input class="button" id="btnTrue" type="button" value="true"/>
                 <input class="button" id="btnFlase" type="button" value="false"/>
             </div>
+            <aside>
+                Need help? Go<strong><a href="index.html#bio">Home</a></strong> to find the answers!
+            </aside>
         </div> 
     </main>
     <footer>
@@ -35,5 +40,6 @@
         <p class="copy-right">&copydevinisagoodgirl</p>
       </footer>   
 </body>
+<script src='js/headfoot.js'></script>
 <script src='js/test.js'></script>
 </html>

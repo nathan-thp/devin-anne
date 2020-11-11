@@ -1,0 +1,122 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: whitesmoke;
+}
+
+/* HEADER MOBILE */
+
+@media only screen and (max-width: 768px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #008b8b;
+        padding-top: 15px;
+        min-width: 100%;
+      }
+
+      #nav {
+        background-color: #008b8b;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        list-style: none;
+        min-width: 100%;
+      }
+      
+      nav a {
+        display: block;
+        background-color: lightgrey;
+        border-radius: 4px;
+        padding: 10px 6%;
+        box-shadow: 5px 5px 5px rgb(37, 34, 34);
+        border: solid rgb(0, 0, 0) .07em;
+      }
+
+      .logo {
+        width: 3em;  
+        padding: 10px;
+        margin: 15px;
+        background-color: lightgrey;
+        box-shadow: 5px 5px 5px rgb(37, 34, 34);
+        border-radius: 50px;
+      
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky
+      .content {
+        padding-top: 60px;
+      }
+}
+
+/* HEADER DESKTOP */
+
+
+/* ------------------------------------------------------------------- */
+
+
+/* FOOTER MOBILE */
+
+@media only screen and (max-width: 768px) {
+    footer {
+        background-color: darkcyan;
+        padding-bottom: 15px;
+        
+      }
+      
+      ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+        min-width: 100%;
+      }
+      
+      .nav-foot li {
+        background-color: lightgrey;
+        border-radius: 4px;
+        padding: 10px 6%;
+        box-shadow: 5px 5px 5px rgb(37, 34, 34);
+        border: solid rgb(0, 0, 0) .07em;
+      }
+      
+      .nav-foot a {
+        display: block;
+      }
+      
+      nav a:hover {
+        box-shadow: 0 0px 20px #273D26 ;
+      }
+      
+      
+      footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+      }
+      
+      .nav-foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+}
+
+
+/* FOOTER DESKTOP */

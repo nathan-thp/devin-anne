@@ -1,9 +1,10 @@
 //Fills in the question div
 function questionIndex() {
-    if (currentItemIndex === 4) {
+    if (currentItemIndex === 4 || points === 4) {
         (document.getElementById("question").innerHTML = `You got ${points} questions correct!`)
 } else {
     document.getElementById("question").innerHTML = questions[currentItemIndex][0];
+    document.getElementById("points").innerHTML = `Points: ${points}`;
     return console.log(currentItemIndex);
 }
 }
