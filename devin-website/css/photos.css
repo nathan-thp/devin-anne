@@ -11,6 +11,9 @@
   #main-container img {
       justify-self: center;
       max-width: auto;
+      margin: 0;
+      border: 3px black solid;
+      border-radius: 25px;
   }
 
   #main-container {
@@ -19,5 +22,6 @@
       flex-direction: column;
       justify-content: center;
   }
+
 
 

@@ -8,15 +8,8 @@
 aside {
   display: flex;
   flex-direction: row;
-}
-aside a {
-  background-color: lightgrey;
-  border-radius: 4px;
-  padding: 10px 6%;
-  box-shadow: 5px 5px 5px rgb(37, 34, 34);
-  border: solid rgb(0, 0, 0) .07em;
-  width: 15px;
-  text-align: center;
+  margin-bottom: 5px;
+  justify-content: center;
 }
 
 

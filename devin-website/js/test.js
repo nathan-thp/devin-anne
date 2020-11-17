@@ -1,7 +1,8 @@
 //Fills in the question div
 function questionIndex() {
-    if (currentItemIndex === 4 || points === 4) {
-        (document.getElementById("question").innerHTML = `You got ${points} questions correct!`)
+    if (currentItemIndex === 4 || points === 4 ) {
+        document.getElementById("question").innerHTML = `You got ${points} questions correct!`;
+        document.getElementById("points").innerHTML = `Points: ${points}`;
 } else {
     document.getElementById("question").innerHTML = questions[currentItemIndex][0];
     document.getElementById("points").innerHTML = `Points: ${points}`;
@@ -32,7 +33,7 @@ for (var i = 0 ; i < questions.length; i++) {
     btn[i].addEventListener('click', event => {
     if (event.target.value === questions[currentItemIndex][1]) {
         console.log("Correct");
-        points++
+        points++;
         currentItemIndex++;
         console.log(points);
         questionIndex();
