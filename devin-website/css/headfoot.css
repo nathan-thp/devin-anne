@@ -140,14 +140,32 @@ html {
         display: flex;
         justify-content: space-around;
       }
-    
-
       
-
-
-
-      
+      .copy-right {
+        align-self: center;
+      }  
 }
 
 
 /* FOOTER DESKTOP */
+@media only screen and (min-width: 768px) {
+  footer {
+    background-color: darkcyan;
+    min-width: 100%;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    }
+    
+    #nav-foot {
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .copy-right {
+      align-self: center;
+    }  
+}

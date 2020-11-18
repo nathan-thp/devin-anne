@@ -1,12 +1,5 @@
-/* FLEX/GRID 
-
-  #main-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-  }
-  */
+/* PHOTOS MOBILE */
+@media only screen and (max-width: 768px) {
 
   #main-container img {
       justify-self: center;
@@ -22,6 +15,27 @@
       flex-direction: column;
       justify-content: center;
   }
+}
 
 
+/* PHOTOS DESKTOP */
 
+@media only screen and (min-width: 768px) {
+
+
+    #main-container {
+        margin: 25px 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 50vw);
+        grid-gap: 15px;
+    }
+
+    #main-container img {
+        border: 3px black solid;
+        border-radius: 25px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
