@@ -1,4 +1,4 @@
-/* MAIN */
+/* MOBILE */
 @media only screen and (max-width: 768px){
 
 
@@ -64,9 +64,9 @@ label {
 @media only screen and (min-width: 768px) {
   #title {
     width: 100%;
-    border: red 5px solid;
     display: flex;
     justify-content: center;
+    text-decoration: underline;
     
   }
 
@@ -93,10 +93,6 @@ label {
     margin-bottom: 25px;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-  #btns {
-  display: flex;
     flex-direction: row;
 }
 

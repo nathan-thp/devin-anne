@@ -3,6 +3,7 @@ function questionIndex() {
     if (currentItemIndex === 4 || points === 4 ) {
         document.getElementById("question").innerHTML = `You got ${points} questions correct!`;
         document.getElementById("points").innerHTML = `Points: ${points}`;
+        replay();
 } else {
     document.getElementById("question").innerHTML = questions[currentItemIndex][0];
     document.getElementById("points").innerHTML = `Points: ${points}`;
@@ -28,7 +29,7 @@ let btnFalse = document.getElementById("btnFalse");
 questionIndex();
 
 
-//Listens for button click, checks if button value is equal to question.
+//Listens for button click, checks if button value is equal to answer.
 for (var i = 0 ; i < questions.length; i++) {
     btn[i].addEventListener('click', event => {
     if (event.target.value === questions[currentItemIndex][1]) {
@@ -46,3 +47,8 @@ for (var i = 0 ; i < questions.length; i++) {
 }
 );
 }
+
+
+function replay() {
+    document.getElementById("btnTrue").innerHtml = "Replay?"
+    }
