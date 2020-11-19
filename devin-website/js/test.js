@@ -3,7 +3,6 @@ function questionIndex() {
     if (currentItemIndex === 4 || points === 4 ) {
         document.getElementById("question").innerHTML = `You got ${points} questions correct!`;
         document.getElementById("points").innerHTML = `Points: ${points}`;
-        replay();
 } else {
     document.getElementById("question").innerHTML = questions[currentItemIndex][0];
     document.getElementById("points").innerHTML = `Points: ${points}`;
@@ -47,8 +46,3 @@ for (var i = 0 ; i < questions.length; i++) {
 }
 );
 }
-
-
-function replay() {
-    document.getElementById("btnTrue").innerHtml = "Replay?"
-    }

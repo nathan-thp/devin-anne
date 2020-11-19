@@ -10,3 +10,11 @@ using JavaScript. This is a true or flase test that inclueds two buttons that th
 order to submit thier answer. When the correct answer is selected this will add a point to their score. Finally,
 once all questions have been answered, a final message will display with the ammout of points you scored.
 
+CSS Feautre!
+- Flexbox on Header, Footer, Home page, and Test page.
+- Grid on Images page.
+
+JavaScript Features
+- Create and populate a JavaScript array with one or more values and display the contents on your page.
+- Create at least 3 variables, set their values in JavaScript, and display the values somewhere on your page. 
+
